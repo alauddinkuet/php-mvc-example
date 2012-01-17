@@ -12,7 +12,7 @@ class Main extends Controller {
 			parent::__construct('main_model');
 			
 	/* decide where is better to put the user validation */
-		if (!$this->model->session->get('loggedIn') && !($this->model->session->get('username'))) {
+		if (!$this->model->session->get('loggedIn') || !($this->model->session->get('username'))) {
 			header('location:' . BASEPATH . 'login');
 		} 
 	}
