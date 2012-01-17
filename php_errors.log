@@ -204,3 +204,71 @@
 [17-Jan-2012 17:37:58] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
 [17-Jan-2012 17:37:58] PHP   3. Login->runLogin() /var/www/GIT/mvc/libs/Bootstrap.php:26
 [17-Jan-2012 17:37:58] PHP   4. Login_Model->login() /var/www/GIT/mvc/controllers/login.php:22
+[17-Jan-2012 18:21:56] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/GIT/mvc/libs/Session.php on line 10
+[17-Jan-2012 18:21:56] PHP Stack trace:
+[17-Jan-2012 18:21:56] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:21:56] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:21:56] PHP   3. Login->runLogin() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:21:56] PHP   4. Login_Model->login() /var/www/GIT/mvc/controllers/login.php:22
+[17-Jan-2012 18:21:56] PHP   5. Session->start() /var/www/GIT/mvc/models/login_model.php:32
+[17-Jan-2012 18:21:56] PHP   6. session_start() /var/www/GIT/mvc/libs/Session.php:10
+[17-Jan-2012 18:21:56] PHP Notice:  Undefined variable: user in /var/www/GIT/mvc/models/login_model.php on line 34
+[17-Jan-2012 18:21:56] PHP Stack trace:
+[17-Jan-2012 18:21:56] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:21:56] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:21:56] PHP   3. Login->runLogin() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:21:56] PHP   4. Login_Model->login() /var/www/GIT/mvc/controllers/login.php:22
+[17-Jan-2012 18:22:00] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/GIT/mvc/libs/Session.php on line 10
+[17-Jan-2012 18:22:00] PHP Stack trace:
+[17-Jan-2012 18:22:00] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:22:00] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:22:00] PHP   3. Login->runLogout() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:22:00] PHP   4. Login_Model->logout() /var/www/GIT/mvc/controllers/login.php:26
+[17-Jan-2012 18:22:00] PHP   5. Session->start() /var/www/GIT/mvc/models/login_model.php:49
+[17-Jan-2012 18:22:00] PHP   6. session_start() /var/www/GIT/mvc/libs/Session.php:10
+[17-Jan-2012 18:22:00] PHP Notice:  Undefined variable: userName in /var/www/GIT/mvc/models/login_model.php on line 54
+[17-Jan-2012 18:22:00] PHP Stack trace:
+[17-Jan-2012 18:22:00] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:22:00] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:22:00] PHP   3. Login->runLogout() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:22:00] PHP   4. Login_Model->logout() /var/www/GIT/mvc/controllers/login.php:26
+[17-Jan-2012 18:22:00] PHP Notice:  Undefined variable: passw in /var/www/GIT/mvc/models/login_model.php on line 54
+[17-Jan-2012 18:22:00] PHP Stack trace:
+[17-Jan-2012 18:22:00] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:22:00] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:22:00] PHP   3. Login->runLogout() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:22:00] PHP   4. Login_Model->logout() /var/www/GIT/mvc/controllers/login.php:26
+[17-Jan-2012 18:24:10] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/GIT/mvc/libs/Session.php on line 10
+[17-Jan-2012 18:24:10] PHP Stack trace:
+[17-Jan-2012 18:24:10] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:24:10] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:24:10] PHP   3. Login->runLogin() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:24:10] PHP   4. Login_Model->login() /var/www/GIT/mvc/controllers/login.php:22
+[17-Jan-2012 18:24:10] PHP   5. Session->start() /var/www/GIT/mvc/models/login_model.php:32
+[17-Jan-2012 18:24:10] PHP   6. session_start() /var/www/GIT/mvc/libs/Session.php:10
+[17-Jan-2012 18:24:10] PHP Notice:  Undefined variable: user in /var/www/GIT/mvc/models/login_model.php on line 34
+[17-Jan-2012 18:24:10] PHP Stack trace:
+[17-Jan-2012 18:24:10] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:24:10] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:24:10] PHP   3. Login->runLogin() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:24:10] PHP   4. Login_Model->login() /var/www/GIT/mvc/controllers/login.php:22
+[17-Jan-2012 18:24:12] PHP Notice:  A session had already been started - ignoring session_start() in /var/www/GIT/mvc/libs/Session.php on line 10
+[17-Jan-2012 18:24:12] PHP Stack trace:
+[17-Jan-2012 18:24:12] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:24:12] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:24:12] PHP   3. Login->runLogout() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:24:12] PHP   4. Login_Model->logout() /var/www/GIT/mvc/controllers/login.php:26
+[17-Jan-2012 18:24:12] PHP   5. Session->start() /var/www/GIT/mvc/models/login_model.php:49
+[17-Jan-2012 18:24:12] PHP   6. session_start() /var/www/GIT/mvc/libs/Session.php:10
+[17-Jan-2012 18:24:12] PHP Notice:  Undefined variable: userName in /var/www/GIT/mvc/models/login_model.php on line 54
+[17-Jan-2012 18:24:12] PHP Stack trace:
+[17-Jan-2012 18:24:12] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:24:12] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:24:12] PHP   3. Login->runLogout() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:24:12] PHP   4. Login_Model->logout() /var/www/GIT/mvc/controllers/login.php:26
+[17-Jan-2012 18:24:12] PHP Notice:  Undefined variable: passw in /var/www/GIT/mvc/models/login_model.php on line 54
+[17-Jan-2012 18:24:12] PHP Stack trace:
+[17-Jan-2012 18:24:12] PHP   1. {main}() /var/www/GIT/mvc/index.php:0
+[17-Jan-2012 18:24:12] PHP   2. Bootstrap->__construct() /var/www/GIT/mvc/index.php:14
+[17-Jan-2012 18:24:12] PHP   3. Login->runLogout() /var/www/GIT/mvc/libs/Bootstrap.php:25
+[17-Jan-2012 18:24:12] PHP   4. Login_Model->logout() /var/www/GIT/mvc/controllers/login.php:26
