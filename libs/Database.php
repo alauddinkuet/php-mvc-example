@@ -1,6 +1,6 @@
 <?php
 /**
- * Database class where implement db wrapper if needed
+ * Implement a db wrapper if needed
  * 
  */
 class Database 

@@ -8,7 +8,7 @@ define('DB_NAME', 'mvctest');
 define('DB_USER', 'root');
 define('DB_PASS', 'admin');
 
-
+ 
 define('BASEPATH', 'http://localhost/GIT/mvc/');
 define('MODELPATH','models/');
 define('CONTROLLERPATH','controllers/');
@@ -18,3 +18,4 @@ define('LIBPATH','libs/');
 define('DEFAULTCONTROLLER', 'main');
  
 
+DEFINE('SESSION_SALT',  'SALT_FOR_SESSION');

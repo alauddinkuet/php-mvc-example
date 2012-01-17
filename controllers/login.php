@@ -11,8 +11,10 @@ class Login extends Controller {
 	}
 	
 	function index( ) 
-	{	
-		$this->viewLoader->render('login' );
+	{	 
+		
+		$token=$this->model->session->get('token');
+		$this->viewLoader->render('login',array('token'=>$token) );
 	}
 	
 	function runLogin()

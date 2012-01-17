@@ -1,19 +1,16 @@
 <?php
 /**
- * default page controller example
- *
- *TODO filter post requests or use a request handler
+ * Main page controller example
+ * 
+ * TODO form and request helper consider to use symfony2 request component
  */
 class Main extends Controller {
 
 	function __construct() {
 
-		Session::start();
-		if (!Session::get('loggedIn')) {
-			header('location:' . BASEPATH . 'login');
-		} else {
+		
 			parent::__construct('main_model');
-		}
+
 	}
 
 	function index() {
@@ -25,13 +22,13 @@ class Main extends Controller {
 
 	function insertRow() {
 
-		$this -> model -> insertRow($_POST['text']);
+		$this -> model -> insertRow(filter_var($_POST['text'],FILTER_SANITIZE_STRING));
 
 	}
 
 	function update($id) {
 
-		$data = array('field' => $_POST['field'], 'value' => $_POST['value']);
+		$data = array('field' => filter_var($_POST['field'],FILTER_SANITIZE_STRING), 'value' => filter_var($_POST['value'],FILTER_SANITIZE_STRING));
 		$this -> model -> updateSingleData($id, $data);
 
 	}

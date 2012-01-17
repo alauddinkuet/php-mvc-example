@@ -14,13 +14,15 @@ class LoadView {
 	}
 /**
  * 
- * basic render function with fixed header and footer and data extract
+ * Basic render function with attached header and footer
+ * 
+ * 
  */
 	public function render($name, $data = null) {
 		if (is_array($data)) {
 			extract($data);
 		}
-		if (!empty($properties)) {
+		if (!empty($properties) && is_array($properties) ) {
 			extract($properties);
 		}
 

@@ -12,7 +12,6 @@ class Bootstrap {
 		$url = rtrim($url, '/');
 		$url = explode('/', $url);
 		
-		//var_dump($url);
 		
 		$controllerName=empty($url[0])?DEFAULTCONTROLLER:$url[0];
 	
