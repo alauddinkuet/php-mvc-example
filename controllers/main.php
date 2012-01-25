@@ -10,8 +10,11 @@ class Main extends Controller {
 
 		
 			parent::__construct('main_model');
-			 
-		if (!$this->model->session->get('loggedIn') || !($this->model->session->get('username'))) {
+			 	
+			$this->session=new Session();
+			$this->session->start();
+			
+		if (!$this->session->get('loggedIn') || !($this->session->get('username'))) {
 			header('location:' . BASEPATH . 'login');
 		} 
 	}
