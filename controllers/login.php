@@ -16,8 +16,7 @@ class Login extends Controller {
 	}
 	
 	function index( ) 
-	{	 
-			
+	{
 		$token=$this->session->get('token');
 		$this->viewLoader->render('login',array('token'=>$token) );
 	}
