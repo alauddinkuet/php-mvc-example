@@ -21,7 +21,7 @@ class Main extends Controller {
 
 	function index() {
 	    $this->loadModel('product_model', 'product');
-	    $this->product->getProducts();
+	    //$this->product->getProducts();
 		$this -> viewLoader -> tableData = $this -> model -> getData();
 		$this -> viewLoader -> render('main');
 
