@@ -15,15 +15,14 @@ class LoadView {
 /**
  * 
  * Basic render function with attached header and footer
- * 
- * 
+ *
  */
 	public function render($name, $data = null, $return = false) {
 		if (is_array($data)) {
 			extract($data);
 		}
-		if (!empty($properties) && is_array($properties) ) {
-			extract($properties);
+		if (!empty($this->properties) && is_array($this->properties) ) {
+			extract($this->properties);
 		}
 
         ob_start();
@@ -42,8 +41,8 @@ class LoadView {
         if (is_array($data)) {
             extract($data);
         }
-        if (!empty($properties) && is_array($properties) ) {
-            extract($properties);
+        if (!empty($this->properties) && is_array($this->properties) ) {
+            extract($this->properties);
         }
         ob_start();
         include VIEWPATH . '/admin/' .$name . '.php';
