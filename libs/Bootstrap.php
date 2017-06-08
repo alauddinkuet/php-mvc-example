@@ -20,7 +20,7 @@ class Bootstrap {
         $method = empty($url[1]) ?  'index': $url[1];
         $args= empty($url[2]) ? NULL : $url[2];
 		// calling methods
-		$controller = new $controllerName(); 
+		$controller = new $controllerName();
 		if(method_exists($controller, $method)){
        		 $controller->$method($args);
 		}else{

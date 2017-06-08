@@ -18,7 +18,7 @@ class LoadView {
  * 
  * 
  */
-	public function render($name, $data = null) {
+	public function render($name, $data = null, $return = false) {
 		if (is_array($data)) {
 			extract($data);
 		}
@@ -26,11 +26,38 @@ class LoadView {
 			extract($properties);
 		}
 
-		include VIEWPATH . 'header.php';
-		include VIEWPATH . $name . '.php';
-		include VIEWPATH . 'footer.php';
+        ob_start();
+        include VIEWPATH . '/admin/' .$name . '.php';
+        $content = ob_get_contents();
+        ob_end_clean();
+
+        if($return)
+           return $content;
+		include VIEWPATH . '/admin/header.php';
+        echo $content;
+        include VIEWPATH . '/admin/footer.php';
 
 	}
+    public function renderFront($name, $data = null, $return = false) {
+        if (is_array($data)) {
+            extract($data);
+        }
+        if (!empty($properties) && is_array($properties) ) {
+            extract($properties);
+        }
+        ob_start();
+        include VIEWPATH . '/admin/' .$name . '.php';
+        $content = ob_get_contents();
+        ob_end_clean();
+
+        if($return)
+            return $content;
+
+        include VIEWPATH . 'header.php';
+        include VIEWPATH . $name . '.php';
+        include VIEWPATH . 'footer.php';
+
+    }
 
 	public function __set($property, $value) {
 		if (!isset($this -> $property)) {
